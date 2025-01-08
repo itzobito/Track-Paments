@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Savings Tracker</h1>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>
+                <img src="f17a2673-6fc7-4116-9bdd-65efa12e8d5f.jpeg" alt="Send Icon" class="icon"> 
+                Track Your Payments
+            </h2>
+            <form id="tracker-form">
+                <input type="number" id="amount" placeholder="Enter amount" required>
+                <select id="category">
+                    <option value="business">Business</option>
+                    <option value="personal">Personal</option>
+                    <option value="party">Party</option>
+                    <option value="food">Food</option>
+                    <option value="entertainment">Entertainment</option>
+                </select>
+                <div class="button-container">
+                    <button type="submit" class="send-button">
+                        <img src="Enviar email _ Ícone Gratis.jpeg" alt="Send Icon" class="icon"> 
+                        Add Payment
+                    </button>
+                </div>
+            </form>
+        </section>
+        <section class="display-section">
+            <h2>Your Summary <img src="Premium Vector _ Give and receive coins.jpeg" alt="Receive Icon" class="icon"></h2>
+            <p>Total Payments: <span id="total-payments">0</span> Rupees</p>
+            <p>Rewards Earned: <span id="rewards">0</span> Rupees</p>
+            <h3>Spending Breakdown</h3>
+            <div class="spending-breakdown">
+                <div class="category-box" id="business-box">
+                    <h4>Business</h4>
+                    <ul id="business-list"></ul>
+                </div>
+                <div class="category-box" id="personal-box">
+                    <h4>Personal</h4>
+                    <ul id="personal-list"></ul>
+                </div>
+                <div class="category-box" id="party-box">
+                    <h4>Party</h4>
+                    <ul id="party-list"></ul>
+                </div>
+                <div class="category-box" id="food-box">
+                    <h4>Food</h4>
+                    <ul id="food-list"></ul>
+                </div>
+                <div class="category-box" id="entertainment-box">
+                    <h4>Entertainment</h4>
+                    <ul id="entertainment-list"></ul>
+                </div>
+            </div>
+            <p id="message" class="hidden"></p>
+        </section>
+    </main>
+    <footer>
+        <p></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

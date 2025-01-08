@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f0f4f8; /* Light gray background color */
+    color: #333; /* Dark text color for better readability */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 128, 0.7); /* Dark blue background with transparency */
+    color: white; /* White text color */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+}
+
+.form-section, .display-section {
+    background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    padding: 20px;
+    width: 100%; /* Full width */
+    max-width: 600px; /* Limit max width */
+}
+
+h2 {
+    text-align: center; /* Center the heading */
+    color: #FF4500; /* Orange color for headings */
+}
+
+.icon
+
+.form-section:hover, .display-section:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+input[type="number"], select {
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s; /* Smooth border color change */
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: #4CAF50; /* Highlight border on focus */
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s; /* Smooth hover effect */
+}
+
+button:hover {
+    background: #45a049;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.spending-breakdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.category-box {
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    flex: 1 1 calc(30% - 20px);
+    min-width: 200px;
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.category-box:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+h4 {
+    margin: 0 0 10px 0;
+    color: #333; /* Darker color for headings */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #e2e6ea;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background 0.3s; /* Smooth hover effect */
+}
+
+li:hover {
+    background: #d1d1d1; /* Darker background on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #4CAF50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Shadow for footer */
+}
+
+.icon {
+    width: 24px; /* Set the width of the icon */
+    height: 24px; /* Set the height of the icon */
+    vertical-align: middle; /* Align icon with text */
+    margin-right: 8px;
+    display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-box {
+        flex: 1 1 calc(100% - 20px); /* Stack items on small screens */
+        margin: 10px 0;
+    }
+
+    header {
+        font-size: 18px; /* Adjust font size for smaller viewports */
+        padding: 15px 0;
+    }
+
+    button {
+        width: 100%; /* Make buttons span full width on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Adjust font size for extra small screens */
+    }
+
+    header {
+        font-size: 16px; /* Further reduce font size */
+    }
+
+    .form-section, .display-section {
+        padding: 15px;
+    }
+
+    input[type="number"], select {
+        width: calc(100% - 12px); /* Adjust input width */
+    }
+}
+.send-button {
+    background: none; /* Remove default button background */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+.send-button img {
+    width: 48px; /* Increase the width of the icon */
+    height: 48px; /* Increase the height of the icon */
+    vertical-align: middle; /* Align icon with text */
+}
+.form-section {
+    text-align: center; /* Center text and elements within the section */
+}
+
+.button-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the button horizontally */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+.send-button {
+    background: none; /* Remove default button background */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.send-button img {
+    width: 48px; /* Increase the width of the icon */
+    height: 48px; /* Increase the height of the icon */
+    vertical-align: middle; /* Align icon with text */
+}
+.icon {
+    width: 48px; /* Set the width of the icon to a larger size */
+    height: 48px; /* Set the height of the icon to a larger size */
+    vertical-align: middle; /* Align icon with text */
+    margin-right: 8px; /* Space between icon and text */
+}
